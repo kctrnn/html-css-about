@@ -1,6 +1,6 @@
 /* SECTION TOP-BAR */
 .top-bar {
-  background-color: deeppink;
+  background-color: var(--primary-color);
   padding: 1rem 0;
 }
 
@@ -50,17 +50,17 @@
 }
 
 .top-nav__menu > li > a:hover {
-  color: deeppink;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 .top-nav__menu > li > a.active {
-  color: deeppink;
+  color: var(--primary-color);
 }
 
 /* SEARCH */
 .top-nav__search {
-  background-color: deeppink;
+  background-color: var(--primary-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   color: white;
