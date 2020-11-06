@@ -50,3 +50,18 @@
   opacity: 0.8;
   line-height: 2;
 }
+
+/* SECTION FACTS */
+.facts {
+  background-color: lightgray;
+  padding: 8rem 0;
+}
+
+.fact-item {
+  text-align: center;
+}
+
+.fact-item__big-number {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
