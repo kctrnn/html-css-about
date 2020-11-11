@@ -1,69 +1,137 @@
+/*******************/
 /* SECTION TOP-BAR */
 .top-bar {
-  background-color: var(--primary-color);
-  padding: 1rem 0;
+  background-color: #ff2a6b;
+  padding: 1.8rem 0;
 }
 
 /* SOCIAL-LIST */
 .top-bar__social-list {
   display: flex;
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
 }
 
 .top-bar__social-list > li {
-  margin-right: 3rem;
+  margin-right: 3.5rem;
 }
+
 .top-bar__social-list > li > a {
-  color: white;
+  color: #fff;
 }
 
 /* LINKS */
-.top-bar__links > a,
-.top-bar__links > span {
-  color: white;
+.top-bar__links {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 600;
 }
 
-/* ******* */
-/* TOP-NAV */
+.top-bar__links > a {
+  color: #fff;
+}
+
+/*******************/
+/* SECTION TOP-NAV */
 .top-nav {
-  padding: 2rem 0;
+  padding: 1.6rem 0;
+
+  position: relative;
+}
+
+.top-nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.top-nav__logo {
+  height: 64px;
 }
 
 /* MENU */
 .top-nav__menu {
   display: flex;
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
 }
 
 .top-nav__menu > li {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .top-nav__menu > li > a {
-  color: black;
+  color: #474747;
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  transition: color 0.35s linear 0s;
 }
 
 .top-nav__menu > li > a:hover {
-  color: var(--primary-color);
-  text-decoration: none;
+  color: #ff2a6b;
 }
 
-.top-nav__menu > li > a.active {
-  color: var(--primary-color);
+.top-nav__menu > li.active > a {
+  font-weight: 700;
+  color: #ff2a6b;
 }
 
 /* SEARCH */
 .top-nav__search {
-  background-color: var(--primary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  color: white;
+  background-color: #ff2a6b;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
 
   cursor: pointer;
+}
+
+.top-nav__search > a {
+  color: white;
+}
+
+/* TOGGLE */
+.top-nav__toggle {
+  display: none;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+
+  font-size: 2.4rem;
+
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+/* ----------767px */
+@media screen and (max-width: 767px) {
+  .top-nav__menu {
+    display: none;
+    flex-direction: column;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .top-nav__menu.show {
+    display: block;
+  }
+
+  .top-nav__menu > li {
+    border-top: 1px solid #ddd;
+    padding: 1.5rem 2rem;
+    margin-right: 0;
+  }
+
+  .top-nav__toggle {
+    display: block;
+    order: 3;
+  }
+
+  .top-nav__search {
+    margin-left: auto;
+  }
 }
