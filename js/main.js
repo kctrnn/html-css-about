@@ -1,8 +1,9 @@
-window.addEventListener('load', function () {
-  const menuToggle = document.querySelector('.top-nav__toggle');
+window.addEventListener('load', () => {
+  const navToggle = document.querySelector('.top-nav__toggle');
 
-  menuToggle?.addEventListener('click', function () {
-    const menu = document.querySelector('.top-nav__menu');
+  navToggle?.addEventListener('click', () => {
+    const menu = document.querySelector('.menu');
+
     menu.classList.toggle('show');
   });
 });

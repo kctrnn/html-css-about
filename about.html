@@ -6,10 +6,8 @@
     <title>About</title>
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -17,10 +15,7 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -67,13 +62,15 @@
 
       <nav class="top-nav">
         <div class="container top-nav__inner">
-          <a href="index.html">
-            <img src="./images/logo.svg" alt="" class="top-nav__logo" />
+          <a href="index.html" class="logo">
+            <img src="./images/logo.svg" alt="" />
           </a>
 
-          <i class="fas fa-bars top-nav__toggle"></i>
+          <div class="top-nav__toggle">
+            <i class="fas fa-bars"></i>
+          </div>
 
-          <ul class="top-nav__menu">
+          <ul class="menu">
             <li><a href="#"> Home </a></li>
             <li><a href="#"> Discover </a></li>
             <li><a href="#"> Explore </a></li>
