@@ -1,0 +1,28 @@
+/* SECTION HERO */
+.hero {
+  background-image: url('../../images/page-top-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  margin: 8rem 0;
+  border-radius: 4px;
+
+  background-color: #ff2a6b;
+
+  font-size: 7.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* RESPONSIVE */
+/* ----------767px */
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 6rem;
+  }
+}
