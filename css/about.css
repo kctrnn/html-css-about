@@ -1,6 +1,7 @@
+/* ************* */
 /* SECTION ABOUT */
 .about {
-  padding: 9.5rem 0;
+  padding: 8rem 0;
 }
 
 .about__content {
@@ -29,4 +30,29 @@
 
 .about__read-more:hover {
   color: #fff;
+}
+
+/* ************* */
+/* SECTION FACTS */
+.facts {
+  background: #eff3f7;
+  padding: 6rem 0;
+}
+
+.facts-item {
+}
+.facts-item__image {
+}
+
+.facts-item__big-number {
+  margin: 2rem 0;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #474747;
+}
+
+.facts-item__name {
+  font-weight: 500;
+  color: #474747;
+  margin-bottom: 4rem;
 }
