@@ -1,7 +1,7 @@
 /*******************/
 /* SECTION TOP-BAR */
 .top-bar {
-  background-color: #ff2a6b;
+  background-color: var(--primary-color);
   padding: 1.8rem 0;
 }
 
@@ -66,17 +66,17 @@
 }
 
 .menu > li > a:hover {
-  color: #ff2a6b;
+  color: var(--primary-color);
 }
 
 .menu > li.active > a {
   font-weight: 700;
-  color: #ff2a6b;
+  color: var(--primary-color);
 }
 
 /* SEARCH */
 .top-nav__search {
-  background-color: #ff2a6b;
+  background-color: var(--primary-color);
   padding: 0.8rem 1rem;
   border-radius: 4px;
 
@@ -126,6 +126,9 @@
     border-top: 1px solid #ddd;
     padding: 1.4rem 2rem;
     margin-right: 0;
+  }
+
+  .menu > li > a {
     color: #333;
   }
 

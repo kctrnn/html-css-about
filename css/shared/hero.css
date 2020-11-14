@@ -12,7 +12,7 @@
   margin: 8rem 0;
   border-radius: 4px;
 
-  background-color: #ff2a6b;
+  background-color: var(--primary-color);
 
   font-size: 7.2rem;
   font-weight: 700;

@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #ff2a6b;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -21,4 +25,36 @@ ul {
   margin: 0;
 }
 
-/* RESPONSIVE */
+/* BUTTON */
+.mine-btn {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* BUTTON EFFECT - HOVER ME*/
+.mine-btn--hover {
+  position: relative;
+  transition: padding 0.25s linear;
+}
+
+.mine-btn--hover:hover {
+  padding-right: 4rem;
+}
+
+.mine-btn--hover > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+/* when btn hover */
+.mine-btn--hover:hover i {
+  opacity: 1;
+}
